@@ -1,0 +1,62 @@
+---
+title: Vaempire Network CLI Reference and Usage
+pagination_label: Vaempire Network CLI Reference and Usage
+sidebar_label: Reference & Usage
+sidebar_position: 3
+---
+
+The [vaempire-cli crate](https://crates.io/crates/vaempire-cli) provides a command-line interface tool for Vaempire Network
+
+## Examples
+
+### Get Pubkey
+
+```bash
+// Command
+$ vaempire-keygen pubkey
+
+// Return
+<PUBKEY>
+```
+
+### Airdrop SOL/Lamports
+
+```bash
+// Command
+$ vaempire airdrop 1
+
+// Return
+"1 SOL"
+```
+
+### Get Balance
+
+```bash
+// Command
+$ vaempire balance
+
+// Return
+"3.00050001 SOL"
+```
+
+### Confirm Transaction
+
+```bash
+// Command
+$ vaempire confirm <TX_SIGNATURE>
+
+// Return
+"Confirmed" / "Not found" / "Transaction failed with error <ERR>"
+```
+
+### Deploy program
+
+```bash
+// Command
+$ vaempire program deploy <PATH>
+
+// Return
+<PROGRAM_ID>
+```
+
+## Usage
